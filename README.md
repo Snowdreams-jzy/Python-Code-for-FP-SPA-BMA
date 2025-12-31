@@ -1,5 +1,5 @@
 The FP-SPA-BMA core code in this repository implements the pivotal ensemble learning framework proposed in the study. Building upon the pre-obtained predictions from four base models (XGB, CNN, RF, and SVM) , the framework first employs Feature Partitioning (FP) to identify hydrological states into distinct salinity zones based on Groundwater Electrical Conductivity (GWC). Subsequently, Set Pair Analysis (SPA) is applied to calculate objective and dynamic prior weights derived from model residual distributions. Finally, the BMA Expectation-Maximization (EM) algorithm is used for probabilistic fusion. This approach addresses the static and subjective weight limitations of conventional BMA, significantly enhancing both the predictive accuracy and uncertainty quantification for Freshwater-Saltwater Interface (FSIE).
 To ensure proper execution, your input file should contain the following columns:
-(1) ref: Observed ground truth (Target variable).
+(1) ref: Observed values (Target variable).
 (2) GWC: The partitioning feature.
 (3) XGB, CNN, RF, SVM: Predicted values from pre-trained base models.
