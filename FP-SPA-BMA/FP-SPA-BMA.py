@@ -2,7 +2,6 @@ import pandas as pd
 import numpy as np
 from scipy.stats import norm
 
-np.random.seed(12)
 df = pd.read_excel('data.xlsx')
 
 target_col = 'ref'
